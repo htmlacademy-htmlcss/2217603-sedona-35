@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Маргарита Балахнина](https://up.htmlacademy.ru/htmlcss/35/user/2217603).
-* Наставник: `Анна Лисененкова`(https://htmlacademy.ru/profile/ankhena).
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
