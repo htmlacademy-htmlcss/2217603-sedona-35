@@ -2,7 +2,7 @@
 
 * Студент: [Маргарита Балахнина](https://up.htmlacademy.ru/htmlcss/35/user/2217603).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
-
+   
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
