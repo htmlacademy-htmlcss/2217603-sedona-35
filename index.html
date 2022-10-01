@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="favicon.png">
   </head>
   <body>
-    <header class="main-header">
+    <header data-test="header" class="main-header">
       <nav class="navigation">
         <a class="navigation-link-current" href="index.html">
           <img class="main-header-logo" src="#" alt="Логотип славного города Седона.">
@@ -45,13 +45,13 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main data-test="main" class="main-index">
       <h1 class="visually-hidden">Седона</h1>
-      <section class="hero">
+      <section data-test="hero" class="hero">
         <h2 class="">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
-        <section class="advantages">
+        <section data-test="advantages" class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
@@ -95,14 +95,15 @@
       </section>
 
 
-      <section class="find-hotel">
+      <section data-test="search" class="find-hotel">
         <h2 class="find-hotel-title">Заинтересовались?</h2>
         <p class="find-hotel-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <p>
           <a class="button button-hotel" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         </p>
       </section>
-      <section class="subscribe">
+
+      <section data-test="subscribe" class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -113,7 +114,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer data-test="footer" class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Соцсети</h2>
         <ul class="footer-social-list">

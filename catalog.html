@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="favicon.png">
   </head>
   <body>
-    <header class="main-header">
+    <header data-test="header" class="main-header">
       <nav class="navigation">
         <a class="navigation-link-current" href="index.html">
           <img class="main-header-logo" src="#" alt="Логотип славного города Седона.">
@@ -46,7 +46,7 @@
     </header>
 
 
-    <main class="main-inner">
+    <main data-test="main" class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs-list">
@@ -58,7 +58,7 @@
             </li>
           </ul>
 
-        <section class="filter-section">
+        <section data-test="filter" class="filter-section">
           <h2 class="visually-hidden">Фильтр по поиску гостиниц</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
@@ -115,7 +115,7 @@
         </section>
       </header>
 
-      <section class="catalog-hotels">
+      <section data-test="catalog" class="catalog-hotels">
         <h2 class="catalog-hotels-title">Найдено гостиниц:<span class="number-of-hotels">38</span></h2>
         <div class="catalog-hotels-sorting">
           <select class="select-control" aria-label="Сортировка">
@@ -125,14 +125,14 @@
           </select>
         </div>
         <div class="catalog-hotels-view">
-          <a class="button" href="#">
-            <span class="visually-hidden">Показать карточки</span>
+          <a class="button bitton-tile">
+            <span class="visually-hidden">Показать плитками</span>
           </a>
-          <a class="button button-light" href="#">
+          <a class="button button-slide" href="#">
             <span class="visually-hidden">Показать слайдом</span>
           </a>
-          <a class="button button-light" href="#">
-            <span class="visually-hidden">Показать список</span>
+          <a class="button button-list" href="#">
+            <span class="visually-hidden">Показать списком</span>
           </a>
         </div>
 
@@ -149,7 +149,7 @@
             <a class="hotel-card-button button" href="#">подробнее</a>
             <button class="hotel-card-button button favorites disable" type="button">в избранное</button>
             <p class="rating"><span class="visually-hidden">4 звезды</span></p>
-            <p><a class="hotel-card-button button rating">Рейтинг: 8,5</a></p>
+            <p class="hotel-card-button rating">Рейтинг: 8,5</p>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -163,7 +163,7 @@
             <a class="hotel-card-button button" href="#">подробнее</a>
             <button class="hotel-card-button button favorites enable" type="button">в избранном</button>
             <p class="rating"><span class="visually-hidden">4 звезды</span></p>
-            <p><a class="hotel-card-button button rating">Рейтинг: 9,2</a></p>
+            <p class="hotel-card-button rating">Рейтинг: 9,2</p>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -177,7 +177,7 @@
             <a class="hotel-card-button button" href="#">подробнее</a>
             <button class="hotel-card-button button favorites disable" type="button">в избранное</button>
             <p class="rating"><span class="visually-hidden">3 звезды</span></p>
-            <p><a class="hotel-card-button button rating">Рейтинг: 6,9</a></p>
+            <p class="hotel-card-button rating">Рейтинг: 6,9</p>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -191,7 +191,7 @@
             <a class="hotel-card-button button" href="#">подробнее</a>
             <button class="hotel-card-button button favorites disable" type="button">в избранное</button>
             <p class="rating"><span class="visually-hidden">2 звезды</span></p>
-            <p><a class="hotel-card-button button rating">Рейтинг: 5,0</a></p>
+            <p class="hotel-card-button rating">Рейтинг: 5,0</p>
           </li>
         </ul>
 
@@ -217,7 +217,7 @@
         </ul>
       </section>
 
-      <section class="subscribe">
+      <section data-test="subscribe" class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -228,7 +228,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer data-test="footer" class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Соцсети</h2>
         <ul class="footer-social-list">
