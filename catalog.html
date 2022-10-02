@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="favicon.png">
   </head>
   <body>
-    <header data-test="header" class="main-header">
+    <header class="main-header">
       <nav class="navigation">
         <a class="navigation-link-current" href="index.html">
           <img class="main-header-logo" src="#" alt="Логотип славного города Седона.">
@@ -20,7 +20,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link">Гостиницы</a>
+            <a class="navigation-link" title="Вы сейчас здесь">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -34,8 +34,8 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
-                Лайки
-              </span>
+                Избранное
+              </span>12
             </a>
           </li>
           <li class="navigation-item">
@@ -46,7 +46,7 @@
     </header>
 
 
-    <main data-test="main" class="main-inner">
+    <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs-list">
@@ -58,7 +58,7 @@
             </li>
           </ul>
 
-        <section data-test="filter" class="filter-section">
+        <section class="filter-section">
           <h2 class="visually-hidden">Фильтр по поиску гостиниц</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
@@ -115,7 +115,7 @@
         </section>
       </header>
 
-      <section data-test="catalog" class="catalog-hotels">
+      <section class="catalog-hotels">
         <h2 class="catalog-hotels-title">Найдено гостиниц:<span class="number-of-hotels">38</span></h2>
         <div class="catalog-hotels-sorting">
           <select class="select-control" aria-label="Сортировка">
@@ -217,7 +217,7 @@
         </ul>
       </section>
 
-      <section data-test="subscribe" class="subscribe">
+      <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -228,7 +228,7 @@
       </section>
     </main>
 
-    <footer data-test="footer" class="page-footer">
+    <footer class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Соцсети</h2>
         <ul class="footer-social-list">
