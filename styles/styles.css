@@ -97,9 +97,12 @@ img {
 
 /*Hero*/
 .hero {
-  background-image: url("../images/hero/background-hero.jpg");
+  background-image: url("../images/hero/zigzag.svg"), url("../images/hero/background-hero.jpg");
+  min-height: 485px;
+  background-position: center bottom, center;
   background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #82B3D3;
 }
 
 img.hero-welcome {
@@ -210,8 +213,11 @@ img.hero-welcome {
 /*Subscribe-block*/
 .subscribe {
   background-image: url("../images/background/background-subscribe.jpg");
+  min-height: 415px;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #333333;
   text-align: center;
  }
 
@@ -271,8 +277,11 @@ img.hero-welcome {
 /*Catalog-filter*/
 .inner-header {
   background-image: url(../images/background/background-filter.jpg);
+  min-height: 412px;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #333333;
   color: #FFFFFF;
 }
 
