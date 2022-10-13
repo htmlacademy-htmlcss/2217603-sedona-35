@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="wrapper">
-    <header class="main-header">
+    <header data-test="header" class="main-header">
       <a class="navigation-link-current" href="index.html">
         <img class="main-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип славного города Седона.">
       </a>
@@ -47,7 +47,7 @@
       </nav>
     </header>
 
-    <main class="main-inner">
+    <main data-test="main" class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs-list">
@@ -59,7 +59,7 @@
             </li>
           </ul>
 
-        <section class="filter-section">
+        <section data-test="filter" class="filter-section">
           <h2 class="visually-hidden">Фильтр по поиску гостиниц</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
@@ -116,7 +116,7 @@
         </section>
       </header>
 
-      <section class="catalog-hotels">
+      <section data-test="catalog" class="catalog-hotels">
         <h2 class="catalog-hotels-title">Найдено гостиниц:<span class="number-of-hotels">38</span></h2>
         <div class="catalog-hotels-sorting">
           <select class="select-control" aria-label="Сортировка">
@@ -218,7 +218,7 @@
         </ul>
       </section>
 
-      <section class="subscribe-inner">
+      <section data-test="subscribe" class="subscribe-inner">
         <h2 class="subscribe-title-inner">Подпишитесь на рассылку</h2>
         <p class="subscribe-description-inner">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -229,7 +229,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer data-test="footer" class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Соцсети</h2>
         <ul class="footer-social-list">
