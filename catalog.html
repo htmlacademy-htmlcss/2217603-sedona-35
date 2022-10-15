@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Каталог гостиниц Седоны</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="styles/styles.css">
-  </head>
-  <body>
-    <div class="wrapper">
+
+<head>
+  <meta charset="utf-8">
+  <title>Каталог гостиниц Седоны</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
     <header class="main-header">
       <a class="navigation-link-current" href="index.html">
-        <img class="main-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип славного города Седона.">
+        <img class="main-header-logo" src="images/logo.svg" width="140" height="70"
+          alt="Логотип славного города Седона.">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -50,14 +53,14 @@
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-          <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-item home-link">
-              <a class="visually-hidden" href="index.html">Главная</a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
-            </li>
-          </ul>
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item home-link">
+            <a class="visually-hidden" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
 
         <section class="filter-section">
           <h2 class="visually-hidden">Фильтр по поиску гостиниц</h2>
@@ -94,8 +97,8 @@
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing-group" value="motel" >
-                      Мотель
+                    <input class="control-input" type="radio" name="housing-group" value="motel">
+                    Мотель
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -106,7 +109,7 @@
                 </li>
               </ul>
             </fieldset>
-          <!--  Сортировка гостиниц по цене
+            <!--  Сортировка гостиниц по цене
             <input class="hotel-price" name="hotel-price" placeholder="от">
             <input class="hotel-price" name="hotel-price" placeholder="до">
           -->
@@ -140,7 +143,8 @@
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Вид на звёздное небо открывается из каменной пещеры.">
+              <img class="hotel-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212"
+                alt="Вид на звёздное небо открывается из каменной пещеры.">
             </a>
             <a class="hotel-card-link" href="#">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -154,7 +158,8 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="images/hotels/hotel-2.jpg" width="300" height="212" alt="Величественная гора на фоне радуги.">
+              <img class="hotel-card-image" src="images/hotels/hotel-2.jpg" width="300" height="212"
+                alt="Величественная гора на фоне радуги.">
             </a>
             <a class="hotel-card-link" href="#">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
@@ -168,7 +173,8 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Щербатая гора из красного камня.">
+              <img class="hotel-card-image" src="images/hotels/hotel-3.jpg" width="300" height="212"
+                alt="Щербатая гора из красного камня.">
             </a>
             <a class="hotel-card-link" href="#">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -182,7 +188,8 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="images/hotels/hotel-4.jpg" width="300" height="212" alt="Плато из красной породы на фоне звёзд.">
+              <img class="hotel-card-image" src="images/hotels/hotel-4.jpg" width="300" height="212"
+                alt="Плато из красной породы на фоне звёзд.">
             </a>
             <a class="hotel-card-link" href="#">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -220,11 +227,13 @@
 
       <section class="subscribe-inner">
         <h2 class="subscribe-title-inner">Подпишитесь на рассылку</h2>
-        <p class="subscribe-description-inner">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        <p class="subscribe-description-inner">Только полезная информация и никакого спама,<br> честное бойскаутское!
+        </p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscriber-email">Email</label>
-          <input class="form-field" type="email" name="subscriber-email" id="subscriber-email" placeholder="Ваш e-mail" required>
-        <button class="subcribe-button button" type="submit">Подписаться</button>
+          <input class="form-field" type="email" name="subscriber-email" id="subscriber-email" placeholder="Ваш e-mail"
+            required>
+          <button class="subcribe-button button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -264,5 +273,6 @@
       </section>
     </footer>
   </div>
-  </body>
+</body>
+
 </html>
