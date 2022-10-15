@@ -26,7 +26,7 @@ html {
 
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -37,7 +37,7 @@ body {
 .page-wrapper {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  height: 100vh;
+  min-height: 100vh;
   width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
@@ -63,9 +63,35 @@ img {
   list-style-type: none;
 }
 
+.navigation {
+  display: flex;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  min-width: 350px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  min-width: 300px;
+  margin-left: auto;
+}
+
 /*для ссылок-заглушек {
   border-bottom: 2px solid #756257;
 }  */
+
+.likes-number {
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  vertical-align: super;
+}
 
 .button {
   font-family: inherit;
@@ -142,9 +168,18 @@ img {
   text-align: center;
 }
 
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .advantages-item {
   list-style: none;
   text-align: center;
+  min-height: 384px;
+
 }
 
 .advantages-title {
@@ -157,6 +192,20 @@ img {
 .big-advantage {
   background-color: #82B3D3;
   color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantage-right-img {
+  width: 400px;
+}
+
+.advantage-left-img {
+  width: 400px;
+}
+
+.small-advantage {
+  width: 400px;
 }
 
 .small-advantage .advantages-description {
@@ -171,9 +220,17 @@ img {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.inteserting-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
 .interesting-item {
   list-style: none;
   text-align: center;
+  min-height: 384px;
+  width: 400px;
 }
 
 .interestins-title {
@@ -256,8 +313,22 @@ img {
   background: #F2F2F2;
 }
 
+.page-footer-container {
+  display: flex;
+  margin: 40px 70px 30px 70px;
+  justify-content: space-between;
+}
+
+.footer-social {
+  min-width: 142px;
+  min-height: 40px;
+
+}
+
 .footer-social-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .vkontakte {
@@ -278,7 +349,13 @@ img {
   text-align: center;
 }
 
-.footer-contacts-phone {
+.footer-tel {
+  width: 720px;
+  margin: 0 40px;
+  text-align: center;
+}
+
+.footer-address-phone {
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -292,6 +369,8 @@ img {
   background-image: url("../images/social-link/html-academy.svg");
   background-repeat: no-repeat;
   text-align: center;
+  min-width: 115px;
+  margin-left: auto;
 }
 
 /*Catalog-filter*/
