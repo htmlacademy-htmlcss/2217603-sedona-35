@@ -48,7 +48,17 @@ img {
   object-fit: contain;
 }
 
+.block-container {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 /*Header*/
+.main-header-logo {
+  width: 140px;
+  margin-right: 30px;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
@@ -65,23 +75,18 @@ img {
 
 .navigation {
   display: flex;
-  margin: 0 auto;
 }
 
 .navigation-list {
-  min-width: 350px;
+  max-width: 500px;
   margin: 0;
   padding: 0;
 }
 
 .navigation-user {
-  min-width: 300px;
+  max-width: 300px;
   margin-left: auto;
 }
-
-/*для ссылок-заглушек {
-  border-bottom: 2px solid #756257;
-}  */
 
 .likes-number {
   font-size: 10px;
@@ -197,15 +202,15 @@ img {
 }
 
 .advantage-right-img {
-  width: 400px;
+  max-width: 400px;
 }
 
 .advantage-left-img {
-  width: 400px;
+  max-width: 400px;
 }
 
 .small-advantage {
-  width: 400px;
+  max-width: 400px;
 }
 
 .small-advantage .advantages-description {
@@ -230,7 +235,7 @@ img {
   list-style: none;
   text-align: center;
   min-height: 384px;
-  width: 400px;
+  max-width: 400px;
 }
 
 .interestins-title {
@@ -315,14 +320,11 @@ img {
 
 .page-footer-container {
   display: flex;
-  margin: 40px 70px 30px 70px;
   justify-content: space-between;
 }
 
 .footer-social {
-  min-width: 142px;
-  min-height: 40px;
-
+  max-width: 200px;
 }
 
 .footer-social-list {
@@ -369,7 +371,7 @@ img {
   background-image: url("../images/social-link/html-academy.svg");
   background-repeat: no-repeat;
   text-align: center;
-  min-width: 115px;
+  max-width: 150px;
   margin-left: auto;
 }
 
@@ -388,10 +390,18 @@ img {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
 }
 
 .breadcrumbs-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-filter-list {
@@ -413,6 +423,11 @@ img {
 .breadcrumbs-item {
   font-size: 16px;
   line-height: 21px;
+}
+
+.catalog-view-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-filter-title {
@@ -459,8 +474,18 @@ img {
   text-align: center;
 }
 
+.hotel-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
 .hotel-card {
   list-style: none;
+  width: 340px;
+  min-height: 438px;
 }
 
 .hotel-card-title {
@@ -486,6 +511,14 @@ a.hotel-card-link {
 
 .pagination {
   list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
 }
 
 .pagination-item a {
