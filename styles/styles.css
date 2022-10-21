@@ -141,8 +141,8 @@ img {
   padding-top: 51px;
   background-image: url("../images/hero/zigzag.svg"), url("../images/hero/background-hero.jpg");
   min-height: 485px;
-  background-position: center bottom, center top;
-  background-size: contain, auto;
+  background-position: bottom -1px center, center top;
+  background-size: 100% auto, cover;
   background-repeat: no-repeat, no-repeat;
   background-color: rgba(131, 179, 211, 0.2);
 }
