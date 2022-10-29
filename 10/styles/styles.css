@@ -120,6 +120,7 @@ img {
 .navigation-user .navigation-link {
   min-width: 24px;
   min-height: 36px;
+  background-color: #82B3D3;
 }
 
 /* оформление лайков
@@ -352,6 +353,11 @@ img {
   gap: 41px;
 }
 
+.footer-social {
+  background-color: #82B3D3;
+
+}
+
 .footer-social-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -398,6 +404,10 @@ img {
   text-transform: uppercase;
   color: inherit;
   text-decoration: none;
+}
+
+.footer-html {
+  background-color: #333333;
 }
 
 /* оформление htmlacademy
@@ -523,11 +533,11 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
+  margin-right: 200px;
 }
 
 .catalog-view-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 50px;
   margin-bottom: 40px;
@@ -538,20 +548,26 @@ img {
   font-size: inherit;
   line-height: inherit;
   color: #333333;
+  min-width: 292px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  margin-right: 70px;
 }
 
 .catalog-hotels-view {
-  max-width: 160px;
+  min-width: 160px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  background-color: #333333;
 }
 
 .bitton-view {
   width: 48px;
   height: 48px;
-  display: inline-block;
+}
 
+.bitton-view:not(:last-child) {
+  margin-right: 8px;
 }
 
 /* оформление плиток
@@ -597,7 +613,7 @@ img {
   border-radius: 4px;
 }
 
-.hotel-card-link{
+.hotel-card-link {
   grid-column: 1 / -1;
 }
 
