@@ -117,22 +117,41 @@ img {
   margin-left: auto;
 }
 
-.navigation-user .navigation-link {
-  min-width: 24px;
-  min-height: 36px;
-  background-color: #82B3D3;
+.navigation-link-search {
+  background-image: url("../images/icons/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 44px;
+  min-height: 64px;
+  padding: 22px 12px;
 }
 
-/* оформление лайков
+.navigation-link-likes {
+  position: relative;
+  background-image: url("../images/icons/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 44px;
+  min-height: 64px;
+  padding: 22px 12px;
+  margin-right: 20px;
+}
+
 .likes-number {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  min-width: 20px;
+  min-height: 20px;
   font-size: 10px;
+  font-weight: 400;
   line-height: 10px;
   text-align: center;
   color: #FFFFFF;
   background-color: #7DB54F;
   border-radius: 50%;
-  vertical-align: super;
-}*/
+  padding: 5px 5px 5px 4px;
+}
 
 .navigation-button {
   padding: 8px 34px;
@@ -353,40 +372,40 @@ img {
   gap: 41px;
 }
 
-.footer-social {
-  background-color: #82B3D3;
-
-}
-
 .footer-social-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 5px 0;
 }
 
-/* иконки соцсетей
 .vkontakte {
   display: block;
+  min-width: 47px;
+  min-height: 40px;
   background-image: url("../images/social-link/vkontakte.svg");
   background-repeat: no-repeat;
-  text-align: center;
+  background-position: 50% 50%;
 }
 
 .telegram {
   display: block;
+  min-width: 47px;
+  min-height: 40px;
   background-image: url("../images/social-link/telegram.svg");
   background-repeat: no-repeat;
-  text-align: center;
+  background-position: 50% 50%;
 }
 
 .youtube {
   display: block;
+  min-width: 47px;
+  min-height: 40px;
   background-image: url("../images/social-link/youtube.svg");
   background-repeat: no-repeat;
-  text-align: center;
-}*/
+  background-position: 50% 50%;
+}
 
 .footer-tel {
   text-align: center;
@@ -407,18 +426,17 @@ img {
 }
 
 .footer-html {
-  background-color: #333333;
+  padding: 8px 0;
 }
 
-/* оформление htmlacademy
 .htmlacademy-link {
   display: block;
+  min-width: 115px;
+  min-height: 33px;
   background-image: url("../images/social-link/html-academy.svg");
   background-repeat: no-repeat;
-  text-align: center;
-  max-width: 150px;
-  margin-left: auto;
-} */
+  background-position: 50% 50%;
+}
 
 /*Catalog-filter*/
 .inner-header {
@@ -498,6 +516,18 @@ img {
   text-transform: capitalize;
   margin-bottom: 32px;
   padding: 0;
+}
+
+.infrastructure {
+  margin-right: 70px;
+}
+
+.type-of-housing {
+  margin-right: auto;
+}
+
+.price-field {
+  margin-right: 70px;
 }
 
 .catalog-filter-item {
