@@ -65,6 +65,7 @@ img {
 }
 
 .button {
+  display: inline-block;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -76,13 +77,17 @@ img {
   border-radius: 4px;
   border: none;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /*Header*/
 .main-header-logo {
   width: 140px;
   margin-right: 30px;
+  margin-bottom: -6px;
   display: block;
+  position: relative;
+  z-index: 1;
 }
 
 .navigation {
@@ -321,7 +326,6 @@ img {
   padding: 8px 50px;
 }
 
-
 .subscribe {
   background-image: url("../images/background/background-subscribe.jpg");
   min-height: 415px;
@@ -356,7 +360,7 @@ img {
   background: #F2F2F2;
 }
 
-.subcribe-button {
+.subscribe-button {
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
@@ -380,31 +384,21 @@ img {
   padding: 5px 0;
 }
 
-.vkontakte {
+.footer-social-link {
+  position: relative;
   display: block;
   min-width: 47px;
   min-height: 40px;
-  background-image: url("../images/social-link/vkontakte.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
-.telegram {
-  display: block;
-  min-width: 47px;
-  min-height: 40px;
-  background-image: url("../images/social-link/telegram.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.youtube {
-  display: block;
-  min-width: 47px;
-  min-height: 40px;
-  background-image: url("../images/social-link/youtube.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.social-link-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83B3D3;
 }
 
 .footer-tel {
@@ -430,19 +424,27 @@ img {
 }
 
 .htmlacademy-link {
+  position: relative;
   display: block;
   min-width: 115px;
   min-height: 33px;
-  background-image: url("../images/social-link/html-academy.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+}
+
+.htmlacademy-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
 }
 
 /*Catalog-filter*/
 .inner-header {
   background-image: url("../images/background/background-filter.jpg");
   min-height: 412px;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
   background-color: #333333;
@@ -582,45 +584,40 @@ img {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 70px;
+  /*Arrow-down padding: 14px 131px 14px 20px;
+  background-image: url("../images/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 7px;
+  background-position: center right 20px; */
 }
 
 .catalog-hotels-view {
   min-width: 160px;
   display: flex;
   flex-wrap: wrap;
-  background-color: #333333;
 }
 
-.bitton-view {
+.card-grid-toggle {
   width: 48px;
   height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
-.bitton-view:not(:last-child) {
+.card-grid-toggle:not(:last-child) {
   margin-right: 8px;
 }
 
-/* оформление плиток
-.tile {
-  display: block;
-  background-image: url("../images/icons/view-tile.svg");
-  background-repeat: no-repeat;
-  text-align: center;
+.button-view {
+  fill: #000000 ;
 }
 
-.slide {
-  display: block;
-  background-image: url("../images/icons/view-slide.svg");
-  background-repeat: no-repeat;
-  text-align: center;
+.card-grid-toggle-current {
+  border-color: #000000;
 }
-
-.list {
-  display: block;
-  background-image: url("../images/icons/view-list.svg");
-  background-repeat: no-repeat;
-  text-align: center;
-} */
 
 .hotel-list {
   display: grid;
@@ -690,7 +687,11 @@ a.hotel-card-link {
 }
 
 .rating {
-  font-weight: 400;
+  text-align: center;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
   color: #333333;
   background-color: #F2F2F2;
   padding: 8px 22px;
