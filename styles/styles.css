@@ -80,6 +80,31 @@ img {
   cursor: pointer;
 }
 
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background: #E5E5E5;
+  color: #FFFFFF;
+}
+
+.button-basic:hover {
+  background: #615048;
+}
+
+.button-second {
+  background: #82B3D3;
+}
+
+.button-second:hover {
+  background: #68A2CA;
+}
+
+.button-in-favorites:hover {
+  background: #6C9E42;
+}
+
 /*Header*/
 .main-header-logo {
   width: 140px;
@@ -363,7 +388,6 @@ img {
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
-  background-color: #82B3D3;
   padding: 8px 50px;
 }
 
@@ -389,6 +413,14 @@ img {
   display: block;
   min-width: 47px;
   min-height: 40px;
+}
+
+.footer-social-link:hover .social-link-icon {
+  fill: #68A2CA;
+}
+
+.footer-social-link:active .social-link-icon {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .social-link-icon {
@@ -419,6 +451,14 @@ img {
   text-decoration: none;
 }
 
+.footer-address-phone:hover {
+  color: #756157;
+}
+
+.footer-address-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .footer-html {
   padding: 8px 0;
 }
@@ -428,6 +468,14 @@ img {
   display: block;
   min-width: 115px;
   min-height: 33px;
+}
+
+.htmlacademy-link:hover .htmlacademy-icon {
+  fill: #756157;
+}
+
+.htmlacademy-link:active .htmlacademy-icon {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .htmlacademy-icon {
@@ -469,7 +517,6 @@ img {
   margin-top: 0;
   margin-bottom: 40px;
 }
-
 
 /* добавит домик
 .home-link {
@@ -547,7 +594,6 @@ img {
 }
 
 .button-submit {
-  background-color: #82B3D3;
   padding: 8px 50px;
   margin-bottom: 32px;
   margin-top: auto;
@@ -658,6 +704,7 @@ a.hotel-card-link {
 
 .hotel-card-image {
   object-fit: contain;
+  display: block;
 }
 
 .hotel-card-type {
@@ -676,9 +723,7 @@ a.hotel-card-link {
 }
 
 .button-to-favorites {
-  background-color: #82B3D3;
   padding: 8px 20px;
-
 }
 
 .button-in-favorites {
@@ -733,6 +778,14 @@ a.hotel-card-link {
   height: 60px;
   padding: 12px 18px;
   border-radius: 4px;
+}
+
+.pagination-link:hover {
+  background: #68A2CA;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-item .pagination-current {
