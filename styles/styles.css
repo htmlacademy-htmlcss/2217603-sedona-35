@@ -833,12 +833,12 @@ a.hotel-card-link {
 .star {
   margin: 0;
   background-image: url("../images/icons/star.svg");
-  background-repeat: space no-repeat;
+  background-repeat: repeat-x;
   background-position: left center;
 }
 
 .four-stars {
-  width: 89px;
+  width: 90px;
 }
 
 .three-stars {
