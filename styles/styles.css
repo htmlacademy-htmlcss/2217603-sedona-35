@@ -131,6 +131,7 @@ img {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   font-size: 20px;
   line-height: 24px;
@@ -140,6 +141,16 @@ img {
   text-transform: capitalize;
   text-align: center;
   padding: 20px 16px;
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  right: 16px;
+  bottom: 0;
+  left: 16px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
 }
 
 .navigation-user {
@@ -239,7 +250,24 @@ img {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0 auto 62px;
+  position: relative;
 }
+
+.advantages-title::before {
+  position: absolute;
+  top: 86px;
+  left: 50%;
+  width: 60px;
+  height: 2px;
+  margin-left: -30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  content: "";
+}
+
+.small-advantage .advantages-title::before {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 
 .advantages-description {
   margin: 0 auto;
@@ -288,6 +316,8 @@ img {
   max-width: 400px;
   padding: 80px 85px 81px;
   flex-grow: 1;
+  background-position: top 80px center;
+  background-repeat: no-repeat;
 }
 
 .interestins-title {
@@ -309,20 +339,14 @@ img {
 
 .housing {
   background-image: url("../images/interesting/housing.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .food {
   background-image: url("../images/interesting/food.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .gift {
   background-image: url("../images/interesting/gift.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .search {
@@ -518,26 +542,48 @@ img {
   margin-bottom: 40px;
 }
 
-/* добавит домик
 .home-link {
+  display: block;
+  min-width: 13px;
+  min-height: 21px;
   background-image: url("../images/icons/home-link.svg");
   background-repeat: no-repeat;
-} */
-
-/* добавит стрелочку
- {
-  background-image: url("../images/icons/arrow-right.svg");
-  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3px 0;
 }
-*/
 
 .breadcrumbs-item {
+  position: relative;
   font-size: 16px;
   line-height: 21px;
 }
 
-.breadcrumbs-item:not(:last-child) {
-  margin-right: 28px;
+.breadcrumbs-item:not(:first-child) {
+  margin-left: 28px;
+}
+
+ .breadcrumbs-item::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: -17px;
+  width: 8px;
+  height: 11px;
+  background-image: url("../images/icons/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.breadcrumbs-item:first-child::before {
+  content: none;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-filter {
@@ -604,6 +650,18 @@ img {
   padding: 8px 57px;
 }
 
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.button:disabled {
+  opacity: 0.1;
+}
+
 /*View*/
 .catalog-hotels-title {
   font-weight: 700;
@@ -637,6 +695,23 @@ img {
   background-position: center right 20px; */
 }
 
+.select-control:hover {
+  border-color: #68A2CA;
+}
+
+.select-control:focus {
+  border-color: #68A2CA;
+}
+
+.select-control:active {
+  border-color: #3F5E72;
+}
+
+.select-control:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
 .catalog-hotels-view {
   min-width: 160px;
   display: flex;
@@ -662,6 +737,18 @@ img {
 }
 
 .card-grid-toggle-current {
+  border-color: #000000;
+}
+
+.card-grid-toggle:hover {
+  border-color: #000000;
+}
+
+.card-grid-toggle:focus {
+  border-color: #68A2CA;
+}
+
+.card-grid-toggle:active {
   border-color: #000000;
 }
 
@@ -744,12 +831,22 @@ a.hotel-card-link {
 }
 
 .star {
-  background-color: #82B3D3;
   margin: 0;
+  background-image: url("../images/icons/star.svg");
+  background-repeat: space no-repeat;
+  background-position: left center;
+}
 
-  /* background-image: url("../images/icons/star.svg");
-  background-repeat: repeat-x;
-  margin: 0;*/
+.four-stars {
+  width: 89px;
+}
+
+.three-stars {
+  width: 66px;
+}
+
+.two-stars {
+  width: 42px;
 }
 
 .pagination {
