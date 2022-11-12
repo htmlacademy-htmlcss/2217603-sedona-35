@@ -11,7 +11,7 @@
 
 <body>
   <div class="page-wrapper">
-    <header data-test="header" class="main-header block-container">
+    <header class="main-header block-container">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
           <img class="main-header-logo" src="images/logo.svg" width="140" height="70"
@@ -50,7 +50,7 @@
       </nav>
     </header>
 
-    <main data-test="main" class="main-inner">
+    <main class="main-inner">
       <header class="inner-header block-container">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs-list">
@@ -63,7 +63,7 @@
           </li>
         </ul>
 
-        <section data-test="filter" class="filter-section">
+        <section class="filter-section">
           <h2 class="visually-hidden">Фильтр по поиску гостиниц</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group infrastructure">
@@ -113,18 +113,26 @@
 
             <fieldset class="catalog-filter-group price-field">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="min-price">
-                    <input class="hotel-price" type="" name="hotel-price" value="0">от
+              <div class="range">
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    <input class="range-input min-price" type="number" value="0" name="min-price"><span class="price-label-text">от</span>
                   </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="max-price">
-                    <input class="hotel-price" type="" name="hotel-price" value="9000">до
+                  <label class="catalog-filter-label">
+                    <input class="range-input max-price" type="number" value="9000" name="max-price"><span class="price-label-text">до</span>
                   </label>
-                </li>
-              </ul>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 226px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <div class="button-container">
               <button class="button button-submit button-second" type="submit">Применить</button>
@@ -134,7 +142,7 @@
         </section>
       </header>
 
-      <section data-test="catalog" class="catalog-hotels block-container">
+      <section class="catalog-hotels block-container">
         <div class="catalog-view-wrapper">
           <h2 class="catalog-hotels-title">Найдено гостиниц: <span class="number-of-hotels">38</span></h2>
           <div class="catalog-hotels-sorting">
@@ -257,7 +265,7 @@
         </ul>
       </section>
 
-      <section data-test="subscribe" class="subscribe-inner">
+      <section class="subscribe-inner">
         <h2 class="subscribe-title-inner">Подпишитесь на рассылку</h2>
         <p class="subscribe-description-inner">Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
@@ -270,7 +278,7 @@
       </section>
     </main>
 
-    <footer data-test="footer" class="page-footer block-container">
+    <footer class="page-footer block-container">
       <section class="footer-social">
         <h2 class="visually-hidden">Соцсети</h2>
         <ul class="footer-social-list">

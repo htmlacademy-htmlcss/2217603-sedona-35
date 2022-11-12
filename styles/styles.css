@@ -391,9 +391,9 @@ img {
 .subscribe {
   background-image: url("../images/background/background-subscribe.jpg");
   min-height: 415px;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   background-color: #333333;
   text-align: center;
   color: #FFFFFF;
@@ -414,6 +414,14 @@ img {
   margin: 0 auto 54px;
 }
 
+.subscribe-form{
+  display: flex;
+}
+
+.subscriber-email {
+  flex-grow: 1;
+  margin: 0;
+}
 
 .form-field {
   font-family: inherit;
@@ -423,18 +431,14 @@ img {
   background: #F2F2F2;
   border: none;
   border-radius: 4px 0px 0px 4px;
+  width: 452px;
 }
-/*
-.subscribe-form{
-  display: flex;
-  margin: 0 auto;
-
-} */
 
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px;
+  border-radius: 0px 4px 4px 0px;
 }
 
 
@@ -659,10 +663,6 @@ img {
   margin-right: auto;
 }
 
-.price-field {
-  margin-right: 70px;
-}
-
 .catalog-filter-item {
   line-height: 23px;
 }
@@ -670,6 +670,112 @@ img {
 .catalog-filter-item:not(:last-child) {
   margin-bottom: 16px;
 }
+
+.price-field {
+  width: 288px;
+  margin-right: 70px;
+}
+
+.range-wrapper-inputs {
+  margin-bottom: 44px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  border: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-label {
+  display: flex;
+  position: relative;
+  /* margin-right: 5px; */
+}
+
+.range-input {
+  width: 143px;
+  padding: 12px 20px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #F2F2F2;
+  border: none;
+  appearance: textfield;
+}
+
+.min-price {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.max-price {
+  border-radius: 0px 4px 4px 0px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.price-label-text{
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+
+
+
 
 .button-container {
   display: flex;
