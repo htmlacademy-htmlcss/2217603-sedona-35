@@ -414,7 +414,7 @@ img {
   margin: 0 auto 54px;
 }
 
-.subscribe-form{
+.subscribe-form {
   display: flex;
 }
 
@@ -600,7 +600,7 @@ img {
   margin-left: 28px;
 }
 
- .breadcrumbs-item::before {
+.breadcrumbs-item::before {
   position: absolute;
   content: "";
   top: 5px;
@@ -671,6 +671,58 @@ img {
   margin-bottom: 16px;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control-input:focus + .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 13px;
+  height: 10px;
+  background-image: url("../images/icons/check.svg");
+  content: "";
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-image: url("../images/icons/circle.svg");
+  content: "";
+}
+
 .price-field {
   width: 288px;
   margin-right: 70px;
@@ -734,7 +786,6 @@ img {
 .catalog-filter-label {
   display: flex;
   position: relative;
-  /* margin-right: 5px; */
 }
 
 .range-input {
@@ -748,6 +799,19 @@ img {
   background-color: #F2F2F2;
   border: none;
   appearance: textfield;
+}
+
+.range-input:hover {
+  background-color: #E6E6E6;
+}
+
+.range-input:focus {
+  background: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.range-input:active {
+  outline: 2px solid #000000;
 }
 
 .min-price {
@@ -764,7 +828,7 @@ img {
   margin: 0;
 }
 
-.price-label-text{
+.price-label-text {
   position: absolute;
   right: 20px;
   top: 12px;
@@ -772,10 +836,6 @@ img {
   color: #000000;
   opacity: 0.3;
 }
-
-
-
-
 
 .button-container {
   display: flex;
@@ -786,7 +846,7 @@ img {
 .button-submit {
   padding: 8px 50px;
   margin-bottom: 32px;
-  margin-top: auto;
+  margin-top: 56px;
 }
 
 .button-reset {
@@ -823,28 +883,36 @@ img {
   margin-bottom: 40px;
 }
 
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 292px;
+  margin-right: 70px;
+}
+
 .select-control {
+  width: 100%;
+  padding: 14px 20px;
+  padding-right: 50px;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  color: #333333;
-  min-width: 292px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  margin-right: 70px;
-  /*Arrow-down padding: 14px 131px 14px 20px;
+  color: #333333;
   background-image: url("../images/icons/arrow-down.svg");
   background-repeat: no-repeat;
-  background-size: 13px 7px;
-  background-position: center right 20px; */
+  background-position: right 20px center;
+  appearance: none;
 }
 
 .select-control:hover {
-  border-color: #68A2CA;
+  border-color: #68A2CA;;
 }
 
 .select-control:focus {
-  border-color: #68A2CA;
+  border-color: #68A2CA;;
 }
 
 .select-control:active {
@@ -877,7 +945,7 @@ img {
 }
 
 .button-view {
-  fill: #000000 ;
+  fill: #000000;
 }
 
 .card-grid-toggle-current {
