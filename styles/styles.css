@@ -174,24 +174,42 @@ img {
   margin-left: auto;
 }
 
-.navigation-link-search {
-  background-image: url("../images/icons/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  min-width: 44px;
-  min-height: 64px;
+.navigation-user-link {
+  display: block;
+  width: 44px;
+  height: 64px;
   padding: 22px 12px;
+  color: #000000;
 }
 
 .navigation-link-likes {
   position: relative;
-  background-image: url("../images/icons/heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  min-width: 44px;
-  min-height: 64px;
-  padding: 22px 12px;
   margin-right: 20px;
+}
+
+.navigation-link:not(.navigation-link-current):hover {
+  color: #756157;
+}
+
+.navigation-link:not(.navigation-link-current):focus {
+  color: #756157;
+}
+
+.navigation-link:not(.navigation-link-current):active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+
+.navigation-user-link:hover {
+  color: #756157;
+}
+
+.navigation-user-link:focus {
+  color: #756157;
+}
+
+.navigation-user-link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .likes-number {
@@ -449,7 +467,7 @@ img {
   padding-bottom: 30px;
   display: grid;
   grid-template-columns: 142px 720px 115px;
-  gap: 40px;
+  gap: 41px;
 }
 
 .footer-social-list {
