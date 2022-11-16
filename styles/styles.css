@@ -199,7 +199,6 @@ img {
   color: rgba(117, 97, 87, 0.3);
 }
 
-
 .navigation-user-link:hover {
   color: #756157;
 }
@@ -289,7 +288,7 @@ img {
 
 .advantages-title::before {
   position: absolute;
-  top: 86px;
+  bottom: -30px;
   left: 50%;
   width: 60px;
   height: 2px;
@@ -301,7 +300,6 @@ img {
 .small-advantage .advantages-title::before {
   background-color: rgba(0, 0, 0, 0.3);
 }
-
 
 .advantages-description {
   margin: 0 auto;
@@ -753,6 +751,8 @@ img {
 
 .range-wrapper-inputs {
   margin-bottom: 44px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .range-scale {
@@ -799,11 +799,6 @@ img {
 .toggle-max {
   top: -8px;
   right: 0;
-}
-
-.range-wrapper-inputs {
-  display: flex;
-  justify-content: space-between;
 }
 
 .catalog-filter-label {
@@ -1315,7 +1310,6 @@ a.hotel-card-link {
   cursor: pointer;
   position: relative;
   background-color: #F2F2F2;
-  position: relative;
 }
 
 .button-minus {
@@ -1415,7 +1409,6 @@ a.hotel-card-link {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   padding: 20px 18px 23px 22px;
-  display: block;
   width: 256px;
   display: none;
 }
